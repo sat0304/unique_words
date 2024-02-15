@@ -1,0 +1,15 @@
+/home/sergei/Dev/unique_words/bin/Debug/net8.0/unique_words
+/home/sergei/Dev/unique_words/bin/Debug/net8.0/unique_words.deps.json
+/home/sergei/Dev/unique_words/bin/Debug/net8.0/unique_words.runtimeconfig.json
+/home/sergei/Dev/unique_words/bin/Debug/net8.0/unique_words.dll
+/home/sergei/Dev/unique_words/bin/Debug/net8.0/unique_words.pdb
+/home/sergei/Dev/unique_words/obj/Debug/net8.0/unique_words.GeneratedMSBuildEditorConfig.editorconfig
+/home/sergei/Dev/unique_words/obj/Debug/net8.0/unique_words.AssemblyInfoInputs.cache
+/home/sergei/Dev/unique_words/obj/Debug/net8.0/unique_words.AssemblyInfo.cs
+/home/sergei/Dev/unique_words/obj/Debug/net8.0/unique_words.csproj.CoreCompileInputs.cache
+/home/sergei/Dev/unique_words/obj/Debug/net8.0/unique_words.sourcelink.json
+/home/sergei/Dev/unique_words/obj/Debug/net8.0/unique_words.dll
+/home/sergei/Dev/unique_words/obj/Debug/net8.0/refint/unique_words.dll
+/home/sergei/Dev/unique_words/obj/Debug/net8.0/unique_words.pdb
+/home/sergei/Dev/unique_words/obj/Debug/net8.0/unique_words.genruntimeconfig.cache
+/home/sergei/Dev/unique_words/obj/Debug/net8.0/ref/unique_words.dll
