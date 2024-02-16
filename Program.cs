@@ -6,8 +6,8 @@ class Test
 {
   public static void Main()
     {
-      string pathInput = @"./InputText.txt";
-      string pathOutput = @"./OutputText.txt";
+      string pathInput = @"./inputText.txt";
+      string pathOutput = @"./outputText.txt";
 
       if (!File.Exists(pathInput))
         {
@@ -43,7 +43,8 @@ class Test
                 Replace(":", "").
                 Replace("(", "").
                 Replace(")", "").
-                Replace("-", "");
+                Replace("--", "").
+                Replace(" - ", "");
             }
           lineString = line.Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
           for (int v = 0; v < lineString.Length; v++)
