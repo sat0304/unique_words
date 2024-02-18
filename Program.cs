@@ -24,11 +24,11 @@ class Test
       string[] lineString;
       string line;
       string pattern = 
-        "([/]+|\\*+|\\.+|\\,+|\\!+|\\;+|\\?+|\\[+|\\]+|\\(+|\\)+|\"+|([0-9]+)|([\\-]{2}))";
+        "(-- -- -|[:]|[/]+|\\*|\\.+|\\,+|\\!+|\\;|\\?+|\\[|\\]|\\(+|\\)+|\"+|([0-9]+)|([\\-]{2}))";
       
       while ((line = streamReader.ReadLine()) != null)
         {
-          var lineClean = Regex.Replace(line, pattern, "");
+          var lineClean = Regex.Replace(line, pattern, " ");
           lineString = lineClean.ToLower().Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
           for (int v = 0; v < lineString.Length; v++)
             {
