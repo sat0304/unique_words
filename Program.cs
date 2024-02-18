@@ -40,7 +40,6 @@ class Test
                 {
                 wordCounter[lineString[v]] = 1; 
                 }
-            // Console.WriteLine("{0}   {1}", lineString[v], wordCounter[lineString[v]]);
             }
        
         }
