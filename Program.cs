@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Text;
+using System.Text.RegularExpressions;
 
 class Test
 {
@@ -22,31 +23,13 @@ class Test
       Dictionary<string, int> wordCounter = [];
       string[] lineString;
       string line;
+      string pattern = 
+        "([/]+|\\*+|\\.+|\\,+|\\!+|\\;+|\\?+|\\[+|\\]+|\\(+|\\)+|\"+|([0-9]+)|([\\-]{2}))";
       
       while ((line = streamReader.ReadLine()) != null)
         {
-          for (int i = 0; i < line.Length; i++)
-            {
-              line = line.ToLower().
-                Replace("!", "").
-                Replace("?", "").
-                Replace(",", "").
-                Replace(".", "").
-                Replace(";", "").
-                Replace("\\", "").
-                Replace("\'", "").
-                Replace("\"", "").
-                Replace("[", "").
-                Replace("]", "").
-                Replace("*", "").
-                Replace("/", "").
-                Replace(":", "").
-                Replace("(", "").
-                Replace(")", "").
-                Replace("--", "").
-                Replace(" - ", "");
-            }
-          lineString = line.Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+          var lineClean = Regex.Replace(line, pattern, "");
+          lineString = lineClean.ToLower().Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
           for (int v = 0; v < lineString.Length; v++)
             {
               if (wordCounter.ContainsKey(lineString[v])) 
